@@ -1,0 +1,8 @@
+# ~/.zprofile - roda uma vez por login (antes do .zshrc).
+# Bom lugar pra inicializar o ambiente do Homebrew.
+
+# Homebrew (Apple Silicon vive em /opt/homebrew)
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Overrides de login pessoais/secretos (git-ignored)
+[[ -f ~/.zprofile.local ]] && source ~/.zprofile.local

@@ -1,0 +1,8 @@
+{
+  "//": "Trecho de exemplo do ~/.claude/settings.json - SÓ a statusline. NÃO copie seu settings.json inteiro pro repo (ele tem dados/estado). Copie só este bloco pro seu settings real.",
+  "statusLine": {
+    "type": "command",
+    "command": "/Users/SEU_USUARIO/.local/bin/cs render",
+    "refreshInterval": 1
+  }
+}

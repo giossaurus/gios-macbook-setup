@@ -1,0 +1,30 @@
+# ~/.gitconfig
+# Troque nome/email pelos seus. O email abaixo é o "noreply" do GitHub
+# (mantém seu email privado nos commits). Pegue o seu em:
+# GitHub → Settings → Emails → "Keep my email addresses private".
+
+[user]
+	name = Giovanni Della Dea
+	email = 91167613+giossaurus@users.noreply.github.com
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+# Diffs mais legíveis (precisa de: brew install diff-so-fancy)
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RF
+[interactive]
+	diffFilter = diff-so-fancy --patch
+
+# git-lfs
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

@@ -1,0 +1,17 @@
+# ~/.gitignore_global - ignora em TODOS os repositórios.
+# Aponte o git pra cá com: git config --global core.excludesfile ~/.gitignore_global
+
+# Lixo do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Overrides locais do Claude Code / ferramentas de IA
+.claudecodeignore
+**/.claude/settings.local.json
+
+# Editores
+*.swp
+*~
+.idea/
+.vscode/*.local

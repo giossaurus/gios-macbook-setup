@@ -1,0 +1,29 @@
+# --- Segredos / dados pessoais (NUNCA versionar) ---
+*.local
+*.local.*
+.zshrc.local
+.zprofile.local
+*.gpg
+*.pem
+*.key
+.netrc
+.npmrc
+.boto
+.env
+.env.*
+**/gcloud/
+*_history
+*.cache
+.ado_orgs.cache
+.claude.json*
+
+# --- Overrides locais do Claude Code ---
+**/.claude/settings.local.json
+
+# --- Backups gerados pelos scripts ---
+.dotfiles-backup/
+
+# --- Lixo do macOS / editores ---
+.DS_Store
+*.swp
+*~
